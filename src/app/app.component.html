@@ -1,0 +1,21 @@
+<main>
+  <header>
+    <h1>Restful Tasks API</h1>
+  </header>
+  <div class="list">
+
+    <div>
+      <button class="purple" (click)="clickAllTaskBtn()" >GET ALL TASKS</button>
+    </div>
+
+    <div *ngIf="tareas">
+      <div class="row" *ngFor="let tarea of tareas">
+        <div>{{tarea.title}}</div>
+        <div class="green_round_btn" (click)="clickTaskBtn(tarea._id)">SHOW</div>
+      </div>
+    </div>
+    
+  </div>
+
+  <app-detail-task *ngIf="tarea" [tarea]="tarea"></app-detail-task>
+</main>

@@ -1,0 +1,13 @@
+.detail {
+    border: 7px solid #306119;
+    font-size: 25px;
+    margin: 25px 0;
+    width: 1000px;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 20px;
+}
+
+.detail > div {
+    margin: 15px 0;
+}
